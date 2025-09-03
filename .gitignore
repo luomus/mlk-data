@@ -6,6 +6,6 @@
 *.rds
 *.parquet
 *.zip
-mlk-public-data.csv
+mlk-public-data.txt
 recordings_anon.csv
 species_ids.csv

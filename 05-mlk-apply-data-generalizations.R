@@ -104,6 +104,14 @@ species_ids <- mutate(
 species_ids <- species_ids[sample(nrow(species_ids)), ]
 
 # Write table to a zip archive
-write.csv(species_ids, "mlk-public-data.csv", row.names = FALSE, quote = FALSE)
+write.table(
+  species_ids,
+  "mlk-public-data.txt",
+  quote = FALSE,
+  sep = "\t",
+  na = "",
+  row.names = FALSE
+)
+
 unlink("mlk-public-data.zip")
-zip("mlk-public-data.zip", "mlk-public-data.csv", flags = "-jr9X")
+zip("mlk-public-data.zip", "mlk-public-data.txt", flags = "-jr9X")
