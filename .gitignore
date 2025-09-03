@@ -1,0 +1,11 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.gpkg
+*.rds
+*.parquet
+*.zip
+mlk-public-data.csv
+recordings_anon.csv
+species_ids.csv
